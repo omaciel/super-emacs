@@ -1,0 +1,2 @@
+;;; public entries -*- mode: plstore -*- 
+(("mastodon" :id 3182 :redirect_uri "urn:ietf:wg:oauth:2.0:oob" :client_id "24fc423cf43fc71cc9046c132cc4050264e43d71d48cde088e3d01e6c137f5d8" :client_secret "586fc84301a7724172594f0226a224fbe385826bbaba800ceb1e8a98016c5fa8"))

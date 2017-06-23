@@ -1,0 +1,5 @@
+(require 'simplenote2)
+(setq simplenote2-email "fabiocosta0305@gmail.com")
+(setq simplenote2-password "shur4t0!!")
+(setq simplenote2-markdown-notes-mode 'markdown-mode)
+(simplenote2-setup)

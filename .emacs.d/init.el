@@ -17,6 +17,13 @@
 (load-file "~/.emacs.d/super-emacs/python.el")
 (load-file "~/.emacs.d/super-emacs/key-bindings.el")
 
+; My personal files
+
+(load-file "~/.emacs.d/myfiles/basic.el")
+(load-file "~/.emacs.d/myfiles/simplenote.el")
+(load-file "~/.emacs.d/myfiles/mastodon.el")
+(load-file "~/.emacs.d/myfiles/php.el")
+
 ;Print welcome message
 (princ (cl-concatenate 'string
                        "Startup completed in "
@@ -32,12 +39,17 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(cua-mode t nil (cua-base))
+ '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (jedi flycheck markdown-mode multi-term git-gutter magit theme-looper myterminal-controls meta-presenter which-key dired-launch material-theme neotree undo-tree ztree auto-complete buffer-move switch-window powerline ace-jump-mode multiple-cursors helm))))
+    (emmet-mode php-mode web-mode jedi flycheck markdown-mode multi-term git-gutter magit theme-looper myterminal-controls meta-presenter which-key dired-launch material-theme neotree undo-tree ztree auto-complete buffer-move switch-window powerline ace-jump-mode multiple-cursors helm mastodon simplenote2)))
+ '(show-paren-mode t)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 120)))))
+ '(default ((t (:height 158 :family "Fantasque Sans Mono" :foundry "PfEd" :slant normal :weight normal :width normal)))))
+
