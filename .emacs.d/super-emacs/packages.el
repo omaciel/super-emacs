@@ -10,6 +10,7 @@
     buffer-move
     dired-launch
     exec-path-from-shell
+    elpy
     flycheck
     git-gutter
     helm
@@ -49,12 +50,12 @@
 (which-key-mode)
 
 ;Set up ace-jump-mode
-(autoload 'ace-jump-mode 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode
+  "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
-(autoload 'ace-jump-mode-pop-mark 
-  "ace-jump-mode" 
+(autoload 'ace-jump-mode-pop-mark
+  "ace-jump-mode"
   "Ace jump back:-"
   t)
 
@@ -84,5 +85,5 @@
 ;; scroll one line at a time (less "jumpy" than defaults)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
 (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
-(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse    
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 (setq scroll-step 1) ;; keyboard scroll one line at a time

@@ -1,4 +1,4 @@
-(defvar super-emacs--my-keyboard-bindings 
+(defvar super-emacs--my-keyboard-bindings
   '(("C-}" . mc/mark-next-like-this)
     ("C-{" . mc/mark-previous-like-this)
     ("C-|" . mc/mark-all-like-this)
@@ -22,6 +22,9 @@
     ("C-S-<down>" . buf-move-down)
     ("C-S-<left>" . buf-move-left)
     ("C-S-<right>" . buf-move-right)
+    ("C-c a" . pyvenv-workon)
+    ("C-c d" . pyvenv-deactivate)
+    ("C-c t" . elpy-test-pytest-runner)
     ("<f6>" . datestamp)
     ("<f5>" . super-emacs-reload-current-file)))
 
