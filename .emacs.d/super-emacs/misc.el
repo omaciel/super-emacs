@@ -33,6 +33,9 @@
 (exec-path-from-shell-copy-env "SSH_AGENT_PID")
 (exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
 
+;; Org-mode stuff
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 ;Setup multi-term
 (setq multi-term-program "/bin/zsh")
 

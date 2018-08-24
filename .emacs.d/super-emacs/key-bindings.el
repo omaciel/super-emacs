@@ -36,6 +36,13 @@
 (mapc 'super-emacs-apply-keyboard-bindings
       super-emacs--my-keyboard-bindings)
 
+(define-key yas-minor-mode-map (kbd "C-c k") 'yas-expand)
+(define-key global-map (kbd "C-c o") 'iedit-mode)
+
+;; Font size controller
+(global-set-key (kbd "C-c C-=") 'text-scale-increase)
+(global-set-key (kbd "C-c C--") 'text-scale-decrease)
+
 (global-set-key (kbd "C-c C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-.") 'mc/mark-all-like-this)

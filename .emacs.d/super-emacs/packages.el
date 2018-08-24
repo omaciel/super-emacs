@@ -5,6 +5,7 @@
 ;Declare a list of required packages
 (defvar super-emacs--required-packages
   '(
+    ace-window
     ace-jump-mode
     auto-complete
     buffer-move
@@ -14,6 +15,7 @@
     flycheck
     git-gutter
     helm
+    iedit
     jedi
     magit
     markdown-mode
@@ -23,6 +25,7 @@
     multiple-cursors
     myterminal-controls
     neotree
+    org-bullets
     powerline
     switch-window
     theme-looper
