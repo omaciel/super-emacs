@@ -9,6 +9,8 @@
 ; Initialize Elpy
 (elpy-enable)
 
+;;(require 'ox-reveal)
+
 (defvar super-emacs/invokation-time
   (current-time))
 
@@ -19,6 +21,7 @@
 (load-file "~/.emacs.d/super-emacs/misc.el")
 (load-file "~/.emacs.d/super-emacs/python.el")
 (load-file "~/.emacs.d/super-emacs/key-bindings.el")
+(load-file "~/.emacs.d/super-emacs/ox-reveal.el")
 
 ;Print welcome message
 (princ (cl-concatenate 'string
@@ -41,7 +44,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (ace-window org-bullets iedit elpy pytest exec-path-from-shell jedi flycheck markdown-mode multi-term git-gutter magit theme-looper myterminal-controls meta-presenter which-key dired-launch material-theme neotree undo-tree ztree auto-complete buffer-move switch-window powerline ace-jump-mode multiple-cursors helm))))
+    (htmlize ox-reveal zenburn-theme ace-window org-bullets iedit elpy pytest exec-path-from-shell jedi flycheck markdown-mode multi-term git-gutter magit theme-looper myterminal-controls meta-presenter which-key dired-launch material-theme neotree undo-tree ztree auto-complete buffer-move switch-window powerline ace-jump-mode multiple-cursors helm))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -15,6 +15,7 @@
     flycheck
     git-gutter
     helm
+    htmlize
     iedit
     jedi
     magit
@@ -26,11 +27,12 @@
     myterminal-controls
     neotree
     org-bullets
-    powerline
+    powerline 
     switch-window
     theme-looper
     undo-tree
     which-key
+    zenburn-theme
     ztree
     ))
 

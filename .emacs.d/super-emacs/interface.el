@@ -12,8 +12,7 @@
 (scroll-bar-mode -1)
 
 ;Activate material theme
-(load-theme 'material
-            t)
+(load-theme 'zenburn t)
 
 ;Set font
 (custom-set-faces

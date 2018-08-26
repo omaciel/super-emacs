@@ -61,3 +61,6 @@
 
 ;Do not make backups
 (setq make-backup-files nil)
+
+(setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+(setq org-reveal-mathjax t)
