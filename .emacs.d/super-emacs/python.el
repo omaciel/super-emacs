@@ -29,3 +29,5 @@
 
 ;virtualenv
 (setq python-environment-directory "~/.virtualenvs")
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
