@@ -1,5 +1,6 @@
 ;Python dependencies
-; pip install virtualenv epc jedi flake8
+; python -m venv ~/.virtualenvs/default
+; pip install epc jedi flake8
 ;Make sure to run: M-x jedi:install-server
 
 ;setup flycheck and jedi for python mode

@@ -48,7 +48,7 @@
          exec-path)))
 
 ;Set PYTHONPATH variable
-(setenv "PYTHONPATH" "/home/omaciel/hacking:/home/omaciel/Dropbox/Hacking:/home/omaciel:/home/omaciel/hacking/katello-cli/src")
+(setenv "PYTHONPATH" "/home/omaciel/hacking:/home/omaciel")
 
 ;Useful function to generate date information
 (defun datestamp ()
