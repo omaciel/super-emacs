@@ -6,11 +6,6 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-; Initialize Elpy
-(elpy-enable)
-
-;;(require 'ox-reveal)
-
 (defvar super-emacs/invokation-time
   (current-time))
 
@@ -21,7 +16,6 @@
 (load-file "~/.emacs.d/super-emacs/misc.el")
 (load-file "~/.emacs.d/super-emacs/python.el")
 (load-file "~/.emacs.d/super-emacs/key-bindings.el")
-(load-file "~/.emacs.d/super-emacs/ox-reveal.el")
 
 ;Print welcome message
 (princ (cl-concatenate 'string

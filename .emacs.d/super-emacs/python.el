@@ -3,6 +3,9 @@
 ; pip install epc jedi flake8
 ;Make sure to run: M-x jedi:install-server
 
+; Initialize Elpy
+(elpy-enable)
+
 ;setup flycheck and jedi for python mode
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:setup-keys t)                      ; use default keybindings

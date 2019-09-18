@@ -6,7 +6,6 @@
     ("C-<" . ace-jump-mode-pop-mark)
     ("M-/" . undo-tree-visualize)
     ("C-\," . neotree-toggle)
-    ("C-\"" . theme-looper-enable-next-theme)
     ("C-M-'" . myterminal-controls-open-controls)
     ("C-c M-x" . execute-extended-command)
     ("M-x" . helm-M-x)
