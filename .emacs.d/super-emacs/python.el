@@ -21,6 +21,8 @@
 ;setup flycheck and jedi for python mode
 (add-hook 'python-mode-hook
           (lambda ()
+            ;Enable automatic paring for parenthesis
+            (electric-pair-mode 1)
             (require 'auto-complete)
             (flycheck-mode 1)
             (setq flycheck-checker 'python-flake8)))
