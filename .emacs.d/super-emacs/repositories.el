@@ -1,6 +1,8 @@
 ;Load package.el
 (require 'package)
 
+(setq package-enable-at-startup nil)
+
 ;Add melpa to list of repositories
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
