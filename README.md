@@ -7,67 +7,135 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/myterminal/super-emacs.svg)](https://hub.docker.com/r/myterminal/super-emacs)
 [![Docker Layers](https://images.microbadger.com/badges/image/myterminal/super-emacs.svg)](https://microbadger.com/images/myterminal/super-emacs)  
 [![License](https://img.shields.io/badge/LICENSE-GPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl.html)
-[![Gratipay](http://img.shields.io/gratipay/myTerminal.svg)](https://gratipay.com/myTerminal)
 [![Join the chat at https://gitter.im/myTerminal/super-emacs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/myTerminal/super-emacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-An out-of-the-box Emacs configuration with super powers, now also on Docker!
+An out-of-the-box Emacs configuration with super-powers
 
-## Video
+## An old video demo
 
 [![http://img.youtube.com/vi/mRoGM_-8K9g/0.jpg](http://img.youtube.com/vi/mRoGM_-8K9g/0.jpg)](http://www.youtube.com/watch?v=mRoGM_-8K9g)
 
 ## Setup
 
-Clone the repository with
+*super-emacs* can be used in two ways.
 
-    git clone https://github.com/omaciel/super-emacs
+### GitHub
 
-or download the repository as an archive and place it at your `home` directory. Once done, start Emacs or well, super Emacs.
+Getting it from GitHub is easier of the two methods. You just need to clone the repository on your local workspace like:
 
-## Docker
+    git clone https://github.com/myTerminal/super-emacs.git
 
-Pull super-emacs docker image and start `emacs`
+Then the only next step would be to make sure that [.emacs.d](.emacs.d) is at the root of your home directory.
+
+You can either place it there manually or otherwise create a soft-link from its location to the home directory.
+
+    ln -s </path/to/cloned/project>/super-emacs/.emacs.d ~/.emacs.d
+
+A clear advantage of the above method would be that you can pull updates from upstream with almost no effort.
+
+Once done, start Emacs to enjoy new super-powers.
+
+### Docker Hub
+
+*super-emacs* is also available on Docker. To start it, run a command that looks like:
 
     docker pull myterminal/super-emacs
 
 ## Features
 
-1. Minimal interface with almost everything except the window turned off
-2. [Material theme](https://github.com/cpaulik/emacs-material-theme) applied by default, with a readable font-size
-3. [MELPA](http://melpa.org) added as a package archive
-4. Navigation through buffers simplified with [winner](http://emacswiki.org/emacs/WinnerMode) and [windmove](http://emacswiki.org/emacs/WindMove).
-5. See command suggestions when `C-x` is pressed, using `which-key`
-6. Super-easy file system navigation with `neotree`
-7. No more welcome screen, Emacs starts up to greet you and shows the date
-8. Reload file in a buffer quickly with `<f5>`
-9. Python development ready!
-10. Fully integration with ZSH shell
-11. Use [multi-term](https://www.emacswiki.org/emacs/MultiTerm) for all shell needs
-12. Git enabled with the power of [magit](https://magit.vc/)
-13. Mark down ready
+### Highlights
 
+- Minimal interface with almost everything except the window turned off
+- [overcast-theme](http://github.com/myTerminal/overcast-theme) applied by default, with a readable font-size
+- [MELPA](http://melpa.org) added as a package archive
+- Easy IDE-like project interaction with [projectile](https://github.com/bbatsov/projectile) and [dumb-jump](https://github.com/jacktasia/dumb-jump)
+- Opinionatedly better file-management with [ranger.el](https://github.com/ralesi/ranger.el)
+- Smooth scrolling with [sublimity](https://github.com/zk-phi/sublimity)
+- Spell-check with [ispell](https://www.emacswiki.org/emacs/InteractiveSpell) using an external spell checker [aspell](http://aspell.net)
+- Navigation through buffers simplified with [winner](http://emacswiki.org/emacs/WinnerMode) and [windmove](http://emacswiki.org/emacs/WindMove).
+- See command suggestions when `C-x` is pressed, using [which-key](https://github.com/justbur/emacs-which-key)
+- Super-easy file system navigation with [neotree](https://github.com/jaypei/emacs-neotree)
+- No more welcome screen, Emacs starts up to greet you and shows the date
+- Reload file in a buffer quickly with `<f5>`
+- Statistical computing with [R Markdown](https://rmarkdown.rstudio.com) files through [ESS](https://github.com/emacs-ess/ESS) and [polymode](https://github.com/polymode/polymode)
+- Some more configuration to improve usability
 
 ### Pre-configured packages
 
-1. [helm](https://github.com/emacs-helm/helm) to take your Emacs experience to the next level
-2. [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to be able to edit text in style
-3. [ace-jump-mode](https://github.com/winterTTr/ace-jump-mode) to be able to jump around quickly
-4. [powerline](https://github.com/milkypostman/powerline) to decorate your mode-line and make it more informative
-5. [switch-window](https://github.com/dimitri/switch-window) to be able to switch windows visually
-6. [buffer-move](http://www.emacswiki.org/emacs/buffer-move.el) for moving buffers within windows quickly
-7. [auto-complete](https://github.com/auto-complete/auto-complete) for easy text editing
-8. [ztree](https://github.com/fourier/ztree) for an efficient directory tree comparison
-9. [undo-tree](https://github.com/emacsmirror/undo-tree) to be able to visualize your changes in a buffer
-10. [neotree](https://github.com/jaypei/emacs-neotree) to be able to spawn a tree at any directory
-11. [dired-launch](https://github.com/thomp/dired-launch) to be able to open files with their default applications from within `dired`
-12. [which-key](https://github.com/justbur/emacs-which-key) to be suggested with what you can do after pressing `C-x`
-13. [meta-presenter](https://github.com/myTerminal/meta-presenter) for presenting slide-shows from within Emacs
-14. [myterminal-controls](https://github.com/myTerminal/myterminal-controls) for quick-toggle controls at a key-stroke
-15. [theme-looper](https://github.com/myTerminal/theme-looper) for switching themes in style
-16. [magit](https://magit.vc/) for powerful integration with Git
-17. [multi-term](https://www.emacswiki.org/emacs/MultiTerm) for a better console experience
-18. [jedi](https://tkf.github.io/emacs-jedi/latest/), [flycheck](http://www.flycheck.org/en/latest/) for a smooth experience while writing Python code - Refer to [python.el](.emacs.d/super-emacs/python.el) for information about installing Python packages and configuring the jedi server)
+- Text-editing
+    - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) to allow spawning of multiple cursors to editing text that follows a particular pattern
+    - [auto-complete](https://github.com/auto-complete/auto-complete) to intelligently save key-strokes
+    - [undo-tree](https://github.com/emacsmirror/undo-tree) to provide a means to move back to a particular point of time through a visual timeline of changes
+    - [sublimity](https://github.com/zk-phi/sublimity) to be able to scroll buffers smoothly
+- Navigation
+    - [dumb-jump](https://github.com/jacktasia/dumb-jump) to provide a 'zero-configuration' setup for "jump-to-definition" to quickly jump to implementation of a particular function to see its implementation
+    - [ace-jump-mode](https://github.com/winterTTr/ace-jump-mode) to be able to jump around in a buffer (and back) quickly
+    - [ace-window](https://github.com/abo-abo/ace-window) to be able to switch windows visually with minimal key-presses
+    - [buffer-move](http://www.emacswiki.org/emacs/buffer-move.el) for moving buffers within windows like a breeze
+- Programming tools
+    - [projectile](https://github.com/bbatsov/projectile) to be able to work with projects as you do in modern IDEs
+- File-system
+    - [ranger.el](https://github.com/ralesi/ranger.el) to bring a ranger-like file-manager to Emacs
+    - [neotree](https://github.com/jaypei/emacs-neotree) to be able to spawn a tree at any directory
+    - [ztree](https://github.com/fourier/ztree) for an efficient directory tree comparison
+- Color themes
+    - [theme-looper](https://github.com/myTerminal/theme-looper) for switching themes in style
+    - [overcast-theme](https://github.com/myTerminal/overcast-theme) as a dark color theme
+- Super-powers
+    - [which-key](https://github.com/justbur/emacs-which-key) to provide instant help around key-bindings as you press keys
+    - [ivy](https://github.com/abo-abo/swiper) (along with counsel and swiper) to make your experience with Emacs better
+    - [counsel-projectile](https://github.com/ericdanan/counsel-projectile) to enable ivy integration for projectile
+    - [myterminal-controls](https://github.com/myTerminal/myterminal-controls) for quick-toggle controls that can be spawned with a single key-stroke
+- Visual tweaks
+    - [powerline](https://github.com/milkypostman/powerline) to decorate your mode-line and add more information
+- Miscellaneous
+    - [meta-presenter](https://github.com/myTerminal/meta-presenter) for presenting slide-shows from within Emacs using markdown files
+    - [ESS](https://github.com/emacs-ess/ESS), [polymode](https://github.com/polymode/polymode), [poly-R](https://github.com/polymode/poly-R) and [poly-markdown](https://github.com/polymode/poly-markdown) for statistical computing with [R Markdown](https://rmarkdown.rstudio.com) files.
 
-### Key-bindings
+### Added key-bindings over stock Emacs
 
-Refer [key-bindings.el](.emacs.d/super-emacs/key-bindings.el) for all the pre-configured key-bindings for your convenience.
+Refer [config-key-bindings.el](.emacs.d/super-emacs/config-key-bindings.el) for all the pre-configured key-bindings for your convenience.
+
+### Optional external dependencies
+
+####  [aspell](http://aspell.net) for spell-check
+
+The presence of this package is detected for use with `ispell` for spell-check. Refer to [the official site](http://aspell.net) for instructions on how to install it on your operating system.
+
+It could be as easy as
+
+    # For Debian/Ubuntu
+    apt install aspell
+
+OR
+
+    # For Fedora
+    dnf install aspell
+
+OR
+
+    # For Arch Linux
+    pacman -S aspell
+
+OR
+
+    # For macOS
+    brew install aspell
+
+depending upon your operating system.
+
+#### [R](https://www.r-project.org) for statistical computing
+
+To be able to work with R Markdown files, *super-emacs* comes pre-configured with all the required packages except for an external dependency on [R](https://www.r-project.org) which needs to be installed on the system.
+
+## Customizing
+
+*super-emacs* comprises entirely of plain-text Elisp files. Not everyone has the same setup and that means that you can (and may) change these files according to your need. However, if you're the kind of person who regularly pulls updates from upstream, there's a high probability that future improvements may end up resulting in merge conflicts on your local workspace. To solve this problem (and according to a suggestion from [@ericllazarus](https://github.com/ericllazarus)), *super-emacs* has been redesigned in a way that it now enables the user to extend their configuration without causing conflicts with future updates. One recommended way of extending *super-emacs* is described below.
+
+All configuration files under [.emacs.d/super-emacs](.emacs.d/super-emacs) with a name starting with `config-` can be extended by creating another file next to it with the same name but ending with a `-custom.el`. For example, if you plan to extend the file [config-packages.el](.emacs.d/super-emacs/config-packages.el), you can place your personal configuration in the file [config-packages-custom.el](.emacs.d/super-emacs/config-packages-custom.el). *super-emacs* will load the original file first followed by the custom file in the right order as designed and you will achieve the effect you desire. Whenever there's an update to the original file, there will be no merge conflicts and life would be so much simpler!
+
+## More
+
+If you're looking for a light-weight setup, try [ample-emacs](https://github.com/myTerminal/ample-emacs).
+
+For an even more comprehensive setup, refer to [my personal configs](https://github.com/myTerminal/.emacs.d).
