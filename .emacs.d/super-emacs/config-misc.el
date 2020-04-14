@@ -54,7 +54,7 @@
 (setq package--init-file-ensured
       t)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/")
+             '("melpa" . "https://melpa.milkbox.net/packages/")
              t)
 (package-initialize)
 

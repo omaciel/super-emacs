@@ -4,7 +4,9 @@
 
 ;;Declare a list of required packages
 (defvar se/configured-packages
-  '(;;Text-editing
+  '(;;GPG Key Servers
+    gnu-elpa-keyring-update
+    ;;Text-editing
     multiple-cursors
     auto-complete
     undo-tree
@@ -16,6 +18,8 @@
     buffer-move
     ;;Programming tools
     projectile
+    magit
+    git-gutter
     ;;File-system
     ranger
     neotree

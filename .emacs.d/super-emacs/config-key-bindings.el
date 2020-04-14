@@ -23,6 +23,8 @@
     ("C-<" . ace-jump-mode-pop-mark)
     ("C-\," . neotree-toggle)
     ("C-x p" . projectile-mode)
+    ;;Programming
+    ("C-x g" . magit-status)
     ;;Misc
     ("C-c M-x" . execute-extended-command)
     ("M-x" . counsel-M-x)
