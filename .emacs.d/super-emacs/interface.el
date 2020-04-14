@@ -1,6 +1,6 @@
 ;Change title-bar text
 (setq frame-title-format
-      "super-emacs")
+      "Og Maciel's Emacs")
 
 ;Disable menu-bar
 (menu-bar-mode -1)
@@ -12,7 +12,7 @@
 (scroll-bar-mode -1)
 
 ;Activate material theme
-(load-theme 'zenburn t)
+(load-theme 'misterioso t)
 
 ;Set font
 (custom-set-faces
