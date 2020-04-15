@@ -20,6 +20,7 @@
     projectile
     magit
     git-gutter
+    flycheck
     ;;File-system
     ranger
     neotree
