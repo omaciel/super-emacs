@@ -45,6 +45,7 @@
     ;; Terminal
     multi-term
     ;;Misc
+    exec-path-from-shell
     meta-presenter))
 
 ;;Install required packages

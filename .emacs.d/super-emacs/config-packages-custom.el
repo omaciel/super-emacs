@@ -14,7 +14,16 @@
 ;; Enable syntax checking globally
 (add-hook 'python-mode-hook
           (lambda ()
+            (setq-default indent-tabs-mode nil)
+            (setq-default tab-width 4)
             (flycheck-mode 1)
-            (setq flycheck-checker 'python-flake8)))
+            (flymake-mode nil)
+            (setq flycheck-checker 'black)
+            ;;(setq elpy-rpc-virtualenv-path (concat (getenv "HOME") "/.virtual/elpy-rpc"))
+            (setq elpy-rpc-virtualenv-path 'default)
+            (setq elpy-rpc-python-command (executable-find "python3"))
+            (setq python-shell-interpreter (executable-find "python3")
+                  python-shell-interpreter-args "-i"
+                  python-environment-directory "$HOME/.virtual")))
 
 ;;; config-package-custom.el ends here
