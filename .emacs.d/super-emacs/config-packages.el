@@ -28,6 +28,7 @@
     ;;Color themes
     theme-looper
     overcast-theme
+    material-theme
     ;;Super-powers
     which-key
     counsel
@@ -98,6 +99,7 @@
 ;;Configure theme-looper
 (theme-looper-set-favorite-themes '(deeper-blue
                                     misterioso
+                                    material
 				    wheatgrass
 				    wombat
 				    overcast))
@@ -105,7 +107,7 @@
           'powerline-reset)
 
 ;;Set the default theme
-(load-theme 'overcast
+(load-theme 'material
             t)
 
 ;;Start which-key-mode
