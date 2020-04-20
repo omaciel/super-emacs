@@ -23,6 +23,7 @@
             (setq elpy-rpc-virtualenv-path 'default)
             (setq elpy-rpc-python-command (executable-find "python3"))
             (setq python-shell-interpreter (executable-find "python3")
+                  python-shell-completion-native-enable nil
                   python-shell-interpreter-args "-i"
                   python-environment-directory "$HOME/.virtual")))
 
