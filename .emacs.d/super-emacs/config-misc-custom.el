@@ -9,7 +9,7 @@
 (exec-path-from-shell-initialize)
 
 ;Handles sourcing ZSH
- (let ((path (shell-command-to-string ". ~/.zshrc; echo -n $PATH")))
+ (let ((path (shell-command-to-string ". ~/.zshenv; echo -n $PATH")))
    (setenv "PATH" path)
    (setq exec-path
          (append
