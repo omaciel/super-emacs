@@ -13,7 +13,11 @@
 
 ;; Globally disable these readline warnings
 ;; https://emacs.stackexchange.com/questions/30082/your-python-shell-interpreter-doesn-t-seem-to-support-readline#comment60191_30970
-(setq python-shell-completion-native-enable nil)
+;; Also, set global defaults to use Python 3
+(setq python-shell-interpreter (executable-find "python3")
+                  python-shell-completion-native-enable nil
+                  python-shell-interpreter-args "-i"
+                  python-environment-directory "$HOME/.virtual")
 
 ;; Enable syntax checking globally
 (add-hook 'python-mode-hook
@@ -25,10 +29,6 @@
             (setq flycheck-checker 'black)
             ;;(setq elpy-rpc-virtualenv-path (concat (getenv "HOME") "/.virtual/elpy-rpc"))
             (setq elpy-rpc-virtualenv-path 'default)
-            (setq elpy-rpc-python-command (executable-find "python3"))
-            (setq python-shell-interpreter (executable-find "python3")
-                  python-shell-completion-native-enable nil
-                  python-shell-interpreter-args "-i"
-                  python-environment-directory "$HOME/.virtual")))
+            (setq elpy-rpc-python-command (executable-find "python3"))))
 
 ;;; config-package-custom.el ends here
