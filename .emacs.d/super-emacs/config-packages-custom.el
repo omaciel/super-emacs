@@ -11,6 +11,10 @@
 ;; Enable git-gutter globally
 (global-git-gutter-mode +1)
 
+;; Globally disable these readline warnings
+;; https://emacs.stackexchange.com/questions/30082/your-python-shell-interpreter-doesn-t-seem-to-support-readline#comment60191_30970
+(setq python-shell-completion-native-enable nil)
+
 ;; Enable syntax checking globally
 (add-hook 'python-mode-hook
           (lambda ()
