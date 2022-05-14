@@ -5,7 +5,7 @@
 (defvar se/packages-custom-standard
   '(;; Related to golang
     (go-mode github "dominikh/go-mode.el" t)
-    (lsp-mode github "emacs-lsp-mode" t)
+    (lsp-mode github "emacs-lsp/lsp-mode" t)
     ;; Nice theme
     (immaterial-theme github "petergardfjall/emacs-immaterial-theme" t)
     ))
