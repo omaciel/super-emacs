@@ -6,6 +6,10 @@
   '(;; Related to golang
     (go-mode github "dominikh/go-mode.el" t)
     (lsp-mode github "emacs-lsp/lsp-mode" t)
+    ;; Magit got git magic
+    (magit melpa "magit" t)
+    ;; Git-gutter
+    (git-gutter melpa "git-gutter" t)
     ;; Nice theme
     (immaterial-theme github "petergardfjall/emacs-immaterial-theme" t)
     ))
@@ -16,6 +20,9 @@
 
 ;; Set the default theme
 (load-theme 'immaterial-dark t)
+
+;; Default git-gutter for files in git repositories
+(global-git-gutter-mode +1)
 
 ;; Load go-mode automatically when opening a .go file
 (autoload 'go-mode "go-mode" nil t)
