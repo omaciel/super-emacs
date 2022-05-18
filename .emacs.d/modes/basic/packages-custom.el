@@ -20,6 +20,9 @@
 ;; Set the default theme
 (load-theme 'immaterial-dark t)
 
+;; Automatically enable linum-mode for all programming modes
+(add-hook 'prog-mode-hook 'linum-mode)
+
 ;; Default git-gutter for files in git repositories
 (global-git-gutter-mode +1)
 
