@@ -4,11 +4,11 @@
 (defvar se/packages-custom-standard
   '(;; Related to golang
     ;; Required for highlighting, indentation etc. It is major mode for Go.
-    (go-mode github "dominikh/go-mode.el" t)
+    (go-mode melpa "dominikh/go-mode.el" t)
     ;; LSP support for Emacs.
-    (lsp-mode github "emacs-lsp/lsp-mode" t)
+    (lsp-mode melpa "emacs-lsp/lsp-mode" t)
     ;; Higher level UI modules for LSP Mode.
-    (lsp-ui github "lsp-ui" t)
+    (lsp-ui melpa "lsp-ui" t)
     ;; YASnippet is a template expansion system.
     (yasnippet melpa "yasnippet" t)
     ;; Magit got git magic
