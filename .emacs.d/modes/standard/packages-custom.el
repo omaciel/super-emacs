@@ -49,3 +49,7 @@
 ;; Start LSP Mode and YASnippet mode
 (add-hook 'go-mode-hook #'lsp-deferred)
 (add-hook 'go-mode-hook #'yas-minor-mode)
+
+;; Use spaces rather than tabs for Rust
+(add-hook 'rust-mode-hook
+          (lambda () (setq indent-tabs-mode nil)))
