@@ -6,6 +6,8 @@
   '(;; Related to golang
     ;; Required for highlighting, indentation etc. It is major mode for Go.
     (go-mode melpa "dominikh/go-mode.el" t)
+    ;; Related to Rust
+    (rust-mode melpa "rust-mode" t)
     ;; LSP support for Emacs.
     (lsp-mode melpa "emacs-lsp/lsp-mode" t)
     ;; Higher level UI modules for LSP Mode.
